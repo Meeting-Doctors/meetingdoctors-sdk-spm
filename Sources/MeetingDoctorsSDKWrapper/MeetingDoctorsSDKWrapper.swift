@@ -1,0 +1,4 @@
+import MeetingDoctorsSDK
+
+struct MeetingDoctorsSDKWrapper {
+}
