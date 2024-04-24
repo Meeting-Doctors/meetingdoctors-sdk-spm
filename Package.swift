@@ -19,7 +19,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/ReactiveX/RxSwift.git", exact: "6.5.0"),
         .package(url: "https://github.com/Meeting-Doctors/socket.io-client-swift", exact: "17.0.0"),
-//        .package(url: "https://github.com/realm/realm-swift.git", from: "10.47.0"),
+//        .package(url: "https://github.com/realm/realm-swift.git", from: "10.49.2"),
         .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.3.0"),
         .package(url: "https://github.com/opentok/vonage-client-sdk-video", from: "2.27.1"),
     ],
@@ -28,54 +28,54 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         // MARK: - MeetingDoctorsCore
         .binaryTarget(name: "MeetingDoctorsCore",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsCore.xcframework.zip",
-            checksum: "e97b91521f30039c4fe625b71dfd7f04144c651eee84e58304b5201f036e10a0"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsCore.xcframework.zip",
+            checksum: "6709cd429817cc184d1cf5132380f427e5e1a179e15e797a723365f724877059"
         ),
         // MARK: - MeetingDoctorsSchema
         .binaryTarget(
             name: "MeetingDoctorsSchema",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsSchema.xcframework.zip",
-            checksum: "1c26118cc3b65e6a2b908834d33900ea67c40c2116d5e92705ec73d128dfc7ef"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSchema.xcframework.zip",
+            checksum: "d89e29e9eea473ed40c2f7ef2e834ca1fbabb62966a86c90550b116043a337e4"
         ),
         // MARK: - MeetingDoctorsController
         .binaryTarget(
             name: "MeetingDoctorsController",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsController.xcframework.zip",
-            checksum: "0e4b36dab87b7616e1732932e1da2f078a614bcd203cd10579026fa446de3bc1"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsController.xcframework.zip",
+            checksum: "003c7b1315546b821e8d485c95e01e95f2b7342bf8ddc59eaed1e255c180320c"
         ),
         // MARK: - MeetingDoctorsSocket
         .binaryTarget(
             name: "MeetingDoctorsSocket",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsSocket.xcframework.zip",
-            checksum: "e04a156f4c45ff6d3f780f070f766b97c857b970076d3a0041afb9e7164f56d6"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSocket.xcframework.zip",
+            checksum: "992db7deed2ec90ed38002c4dbf4d00e857de07f828c00583ab48e47397c90fc"
         ),
         // MARK: - MeetingDoctorsStorage
         .binaryTarget(
             name: "MeetingDoctorsStorage",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsStorage.xcframework.zip",
-            checksum: "8680592bac179e841d2127389f961f77391d3f0cf55a939bf13766ac2dc7b94f"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsStorage.xcframework.zip",
+            checksum: "95a24a85206018438ecd7ab541e35b26bb75dea3ae5ec5f9a2bd4c9a94230ef2"
         ),
         // MARK: - Realm
         .binaryTarget(
-            name: "Realm",
+            name: "RealmWrapper",
             path: "Frameworks/Realm.xcframework"
         ),
         // MARK: - RealmSwift
         .binaryTarget(
-            name: "RealmSwift",
+            name: "RealmSwiftWrapper",
             path: "Frameworks/RealmSwift.xcframework"
         ),
         // MARK: - MeetingDoctorsRemote
         .binaryTarget(
             name: "MeetingDoctorsRemote",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsRemote.xcframework.zip",
-            checksum: "511085acafe9efbee879507d21e7a6ea95973255c82c8812e2e6051c71f26830"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsRemote.xcframework.zip",
+            checksum: "6666ebc95b1c06ce76cb48261161127e6a75f69c6a5e65fef4fc9071f011ea9c"
         ),
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.0/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "d5a1e5becf1657f80de96590d2df558dda7a125d5be77cc355753d61539f0379"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "608ad238047419e2fc59ff8ddbbb87ec24f8fd652d52973532b1dcf0dad0c359"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
@@ -84,8 +84,8 @@ let package = Package(
                 "MeetingDoctorsSchema",
                 "MeetingDoctorsController",
                 "MeetingDoctorsSocket",
-                "Realm",
-                "RealmSwift",
+                "RealmWrapper",
+                "RealmSwiftWrapper",
                 "MeetingDoctorsStorage",
                 "MeetingDoctorsRemote",
                 "MeetingDoctorsSDK",
