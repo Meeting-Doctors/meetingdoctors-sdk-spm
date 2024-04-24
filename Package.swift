@@ -28,32 +28,32 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         // MARK: - MeetingDoctorsCore
         .binaryTarget(name: "MeetingDoctorsCore",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsCore.xcframework.zip",
-            checksum: "6709cd429817cc184d1cf5132380f427e5e1a179e15e797a723365f724877059"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsCore.xcframework.zip",
+            checksum: "a998b71fc72cf5d44485a35dc6951d3c8d4f275e7876542850e4eb417241986a"
         ),
         // MARK: - MeetingDoctorsSchema
         .binaryTarget(
             name: "MeetingDoctorsSchema",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSchema.xcframework.zip",
-            checksum: "d89e29e9eea473ed40c2f7ef2e834ca1fbabb62966a86c90550b116043a337e4"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsSchema.xcframework.zip",
+            checksum: "aeaa2c9cc2eef389187774a68fa41a922338687bf05f28ba218eab41579502a0"
         ),
         // MARK: - MeetingDoctorsController
         .binaryTarget(
             name: "MeetingDoctorsController",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsController.xcframework.zip",
-            checksum: "003c7b1315546b821e8d485c95e01e95f2b7342bf8ddc59eaed1e255c180320c"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsController.xcframework.zip",
+            checksum: "6a4c374816139d6f909e61315c51ae2434e35642e6000c24c16f072ed3da55fc"
         ),
         // MARK: - MeetingDoctorsSocket
         .binaryTarget(
             name: "MeetingDoctorsSocket",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSocket.xcframework.zip",
-            checksum: "992db7deed2ec90ed38002c4dbf4d00e857de07f828c00583ab48e47397c90fc"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsSocket.xcframework.zip",
+            checksum: "58b24da0471400752d5cbb17c0b0ba8634bc1bf0490efee3939a7d7d708810d5"
         ),
         // MARK: - MeetingDoctorsStorage
         .binaryTarget(
             name: "MeetingDoctorsStorage",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsStorage.xcframework.zip",
-            checksum: "95a24a85206018438ecd7ab541e35b26bb75dea3ae5ec5f9a2bd4c9a94230ef2"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsStorage.xcframework.zip",
+            checksum: "6e82de117e0d8e9bb25b1b5689bf9eac8eb3fa77eca8d2f4fdc03ea2374f649a"
         ),
         // MARK: - Realm
         .binaryTarget(
@@ -68,14 +68,14 @@ let package = Package(
         // MARK: - MeetingDoctorsRemote
         .binaryTarget(
             name: "MeetingDoctorsRemote",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsRemote.xcframework.zip",
-            checksum: "6666ebc95b1c06ce76cb48261161127e6a75f69c6a5e65fef4fc9071f011ea9c"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsRemote.xcframework.zip",
+            checksum: "73b5fd325e894268fa4752161ab0ecff9eb2330808093d50aacacf887c9cd2be"
         ),
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.1/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "608ad238047419e2fc59ff8ddbbb87ec24f8fd652d52973532b1dcf0dad0c359"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.0.2/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "d5f50b0594f2d789362bbac7206e641a0df5e92a7e0cc8283f31868a3d4f4bfd"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
