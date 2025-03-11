@@ -24,8 +24,8 @@ let package = Package(
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.2.3/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "7faa82f2ed7dfdd7e583089d64794cc6b57bb648491890aebc11eda959419cc4"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/6.3.0-beta.1/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "201bd208d1cb5a80b1b71c81599c5d8ed2d0ed8659460d5e339237c9443c6011"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
