@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "MeetingDoctorsSDK",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v15),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -24,8 +24,8 @@ let package = Package(
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/10.2.0/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "fc0485be23d1f3bce2fa4878677c8ee250aef5b29b348b7fd2deb3127d704299"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.0.0/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "5caa3a01fb4f5bec5aea86488b21cb26ddbf7acc23c2ee05951fa8994703c9aa"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
