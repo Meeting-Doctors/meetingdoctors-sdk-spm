@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 6.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -14,6 +14,14 @@ let package = Package(
             name: "MeetingDoctorsSDKWrapper",
             targets: ["MeetingDoctorsSDKWrapper"]
         ),
+        .library(
+            name: "MeetingDoctorsSDKWrapper-Dynamic",
+            targets: ["MeetingDoctorsSDKDynamicWrapper"]
+        ),
+        .library(
+            name: "MeetingDoctorsSDKWrapper-NoAnalytics",
+            targets: ["MeetingDoctorsSDKNoAnalyticsWrapper"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,8 +32,8 @@ let package = Package(
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.3.0/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "f52116ab1d536e96ea102965f0eefd74a022a8ca2b117ea7cf744e86a2fee0b7"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.1.3-beta.15/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "f7741b2efa65fa0c56af95dbe5d9c321e99ccf73c31cb117886f097b3b95cab9"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
@@ -35,5 +43,32 @@ let package = Package(
             path: "Sources/MeetingDoctorsSDKWrapper",
             resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
-    ]
+        .binaryTarget(
+            name: "MeetingDoctorsSDK_Dynamic",
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.1.3-beta.15/MeetingDoctorsSDK_Dynamic.xcframework.zip",
+            checksum: "4dc27adf585bfffa3c9530c0c6197f585697d63e15ab1492ee9eeea192046588"
+        ),
+        .target(
+            name: "MeetingDoctorsSDKDynamicWrapper",
+            dependencies: [
+                "MeetingDoctorsSDK_Dynamic"
+            ],
+            path: "Sources/MeetingDoctorsSDKDynamicWrapper",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
+        ),
+        .binaryTarget(
+            name: "MeetingDoctorsSDK_NoAnalytics",
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.1.3-beta.15/MeetingDoctorsSDK_NoAnalytics.xcframework.zip",
+            checksum: "51c832b071e82872fb847605e212bc945c26b00c09e34a521a1c9a596d7513b3"
+        ),
+        .target(
+            name: "MeetingDoctorsSDKNoAnalyticsWrapper",
+            dependencies: [
+                "MeetingDoctorsSDK_NoAnalytics",
+            ],
+            path: "Sources/MeetingDoctorsSDKNoAnalyticsWrapper",
+            resources: [.copy("PrivacyInfo.xcprivacy")]
+        ),
+    ],
+    swiftLanguageModes: [.v5]
 )
