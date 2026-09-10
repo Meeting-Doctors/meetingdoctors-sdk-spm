@@ -32,8 +32,8 @@ let package = Package(
         // MARK: - MeetingDoctorsSDK
         .binaryTarget(
             name: "MeetingDoctorsSDK",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.4.1/MeetingDoctorsSDK.xcframework.zip",
-            checksum: "8142221816fb207a7a0e0fcb54f119069c2fd1bf1df08737b941235c0c4193f4"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.5.0/MeetingDoctorsSDK.xcframework.zip",
+            checksum: "fcaf42cfba4ea92ca4197b02888e5cabd96a06dfbd948ff0981fbb90b475b16e"
         ),
         .target(
             name: "MeetingDoctorsSDKWrapper",
@@ -45,8 +45,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MeetingDoctorsSDK_Dynamic",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.4.1/MeetingDoctorsSDK_Dynamic.xcframework.zip",
-            checksum: "0a049faa603b6be02b3b8b57649ffc00f32723dfcbf2fdb57cecc56cd7b4b9e6"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.5.0/MeetingDoctorsSDK_Dynamic.xcframework.zip",
+            checksum: "e58d69551eb627fb707f706b03e148f8f17ac09939ec0d4a0e77f1137908dd9e"
         ),
         .target(
             name: "MeetingDoctorsSDKDynamicWrapper",
@@ -58,8 +58,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "MeetingDoctorsSDK_NoAnalytics",
-            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.4.1/MeetingDoctorsSDK_NoAnalytics.xcframework.zip",
-            checksum: "ba1dbd0fd6628ff371b5b98143fbf85383ff8c17534b638c41bd73e8afc1042b"
+            url: "https://sdk-download.meetingdoctors.com/iOS/MeetingDoctorsSDK/11.5.0/MeetingDoctorsSDK_NoAnalytics.xcframework.zip",
+            checksum: "ddd1ffefd0bf78efac55a9f65dac8b189ebf8313ba1821786eb8ccfcbb1019cf"
         ),
         .target(
             name: "MeetingDoctorsSDKNoAnalyticsWrapper",
